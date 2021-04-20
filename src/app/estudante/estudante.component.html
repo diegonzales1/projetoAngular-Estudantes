@@ -1,0 +1,57 @@
+<div class="card card-default">
+    <div class="card-header">
+        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-file-earmark-text" viewBox="0 0 16 16">
+            <path d="M5.5 7a.5.5 0 0 0 0 1h5a.5.5 0 0 0 0-1h-5zM5 9.5a.5.5 0 0 1 .5-.5h5a.5.5 0 0 1 0 1h-5a.5.5 0 0 1-.5-.5zm0 2a.5.5 0 0 1 .5-.5h2a.5.5 0 0 1 0 1h-2a.5.5 0 0 1-.5-.5z"/>
+            <path d="M9.5 0H4a2 2 0 0 0-2 2v12a2 2 0 0 0 2 2h8a2 2 0 0 0 2-2V4.5L9.5 0zm0 1v2A1.5 1.5 0 0 0 11 4.5h2V14a1 1 0 0 1-1 1H4a1 1 0 0 1-1-1V2a1 1 0 0 1 1-1h5.5z"/>
+          </svg> Insira os Dados do Aluno
+    </div>
+    <div class="card-body ">
+        <h5 class="card-title">Cadastro</h5>
+        <div class="col">
+            <span>Ra:</span> {{estudante.ra}}
+        </div>
+        <div class="col">
+            <label class="label" for="name">Nome: </label>
+            <input class="input-group" id="name" [(ngModel)]="estudante.name" placeholder="Insira o nome">
+        </div>
+        <div class="col">
+            <label class="label" for="telephone">Telefone: </label>
+            <input class="input-group" id="telephone" [(ngModel)]="estudante.telephone" placeholder="Insira o telefone">
+        </div>
+        <div class="col">
+            <label class="label" for="clas">Turma/Classe: </label>
+            <input class="input-group" id="class" [(ngModel)]="estudante.class" placeholder="Insira a classe e a turma">
+        </div>
+        <div class="col">
+            <label class="label" for="registered">Nome da mãe: </label>
+            <input class="input-group" id="motherName" [(ngModel)]="estudante.motherName" placeholder="Insira o nome da mãe do aluno">
+        </div>
+    </div>
+</div>
+
+<div class="card card-default">
+    <div class="card-header">
+        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-file-earmark-text" viewBox="0 0 16 16">
+            <path d="M5.5 7a.5.5 0 0 0 0 1h5a.5.5 0 0 0 0-1h-5zM5 9.5a.5.5 0 0 1 .5-.5h5a.5.5 0 0 1 0 1h-5a.5.5 0 0 1-.5-.5zm0 2a.5.5 0 0 1 .5-.5h2a.5.5 0 0 1 0 1h-2a.5.5 0 0 1-.5-.5z"/>
+            <path d="M9.5 0H4a2 2 0 0 0-2 2v12a2 2 0 0 0 2 2h8a2 2 0 0 0 2-2V4.5L9.5 0zm0 1v2A1.5 1.5 0 0 0 11 4.5h2V14a1 1 0 0 1-1 1H4a1 1 0 0 1-1-1V2a1 1 0 0 1 1-1h5.5z"/>
+          </svg> Dados do Aluno
+    </div>
+    <div class="card-body ">
+        <h5 class="card-title">Cadastro</h5>
+        <div class="col">
+            <span>Ra:</span> {{estudante.ra}}
+        </div>
+        <div class="col">
+            <span>Nome:</span> {{estudante.name}}
+        </div>
+        <div class="col">
+            <span>Telefone:</span> {{estudante.telephone}}
+        </div>
+        <div class="col">
+            <span>Turma/Classe:</span> {{estudante.class}}
+        </div>
+        <div class="col">
+            <span>Nome da mãe:</span> {{estudante.motherName}}
+        </div>
+    </div>
+</div>
