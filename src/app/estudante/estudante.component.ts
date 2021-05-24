@@ -1,6 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 import { Estudante } from '../estudante';
 import { EstudanteService } from '../estudante.service';
+import { MessageService } from '../message.service';
 
 @Component({
   selector: 'app-estudante',
@@ -13,7 +14,7 @@ export class EstudanteComponent implements OnInit {
 
   selectedEstudante?: Estudante;
 
-  constructor(private estudanteService: EstudanteService) { }
+  constructor(private estudanteService: EstudanteService, private messagesService: MessageService) { }
 
   ngOnInit(): void {
     this.getEstudantes();
@@ -26,6 +27,7 @@ export class EstudanteComponent implements OnInit {
 
   onSelect(estudante: Estudante): void {
     this.selectedEstudante = estudante;
+    this.messagesService.add(`EstudanteComponent: Selected estudante id=${estudante.ra}`);
   }
 
 

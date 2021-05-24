@@ -1,0 +1,13 @@
+<div class="card card-default">
+    <div class="card-header">
+        <h2>Messages</h2>
+
+    </div>
+    <div class="card-body" *ngIf="messageService.messages.length">
+        <blockquote class="blockquote mb-0">
+
+            <div *ngFor='let message of messageService.messages'> {{message}} </div>
+            <div class="footer"><button class="clear btn btn-outline-secondary" (click)="messageService.clear()">Clear messages</button></div>
+        </blockquote>
+    </div>
+</div>
