@@ -12,6 +12,17 @@ h2 {
     font-family: 'Courier New', Courier, monospace;
 }
 
+.button {
+    margin-left: 40px;
+}
+
+a:link,
+a:visited,
+a:hover {
+    text-decoration: none;
+    color: inherit;
+}
+
 
 /* HeroesComponent's private CSS styles */
 

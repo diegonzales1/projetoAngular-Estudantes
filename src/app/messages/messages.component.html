@@ -1,9 +1,9 @@
-<div class="card card-default">
+<div class="card card-default" *ngIf="messageService.messages.length">
     <div class="card-header">
         <h2>Messages</h2>
 
     </div>
-    <div class="card-body" *ngIf="messageService.messages.length">
+    <div class="card-body">
         <blockquote class="blockquote mb-0">
 
             <div *ngFor='let message of messageService.messages'> {{message}} </div>

@@ -1,0 +1,14 @@
+<div class="card card-default">
+    <div class="card-header">
+        Estudantes
+    </div>
+    <div class="card-body ">
+        <h5 class="card-title">Top Estudantes</h5>
+        <hr>
+        <ul class="estudantes">
+            <li *ngFor="let estudante of estudantes" routerLink="/detail/{{estudante.ra}}">
+                <span class="label"> {{estudante.name}}</span>
+            </li>
+        </ul>
+    </div>
+</div>

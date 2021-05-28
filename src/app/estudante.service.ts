@@ -18,4 +18,10 @@ export class EstudanteService {
     return estudantes;
   }
 
+  getEstudante(id : number): Observable<Estudante> {
+    const estudante = ESTUDANTE.find(aluno => aluno.ra === id) as Estudante;
+    this.messageService.add(`EstudanteService: fetched estudante ra =${id}`);
+    return of(estudante);
+  }
+
 }

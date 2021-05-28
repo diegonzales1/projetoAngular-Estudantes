@@ -9,10 +9,7 @@ import { MessageService } from '../message.service';
   styleUrls: ['./estudante.component.css']
 })
 export class EstudanteComponent implements OnInit {
-
   estudantes: Estudante[] = [];
-
-  selectedEstudante?: Estudante;
 
   constructor(private estudanteService: EstudanteService, private messagesService: MessageService) { }
 
@@ -24,12 +21,5 @@ export class EstudanteComponent implements OnInit {
     this.estudanteService.getEstudantes()
       .subscribe(estudantes => this.estudantes = estudantes);
   }
-
-  onSelect(estudante: Estudante): void {
-    this.selectedEstudante = estudante;
-    this.messagesService.add(`EstudanteComponent: Selected estudante id=${estudante.ra}`);
-  }
-
-
 
 }
