@@ -29,4 +29,8 @@ export class EstudanteDetailComponent implements OnInit {
     this.estudanteService.getEstudante(id)
       .subscribe(estudante => this.estudante = estudante);
   }
+
+  goBack(): void{
+    this.location.back();
+  }
 }
