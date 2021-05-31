@@ -8,7 +8,26 @@
         <ul class="estudantes">
             <li *ngFor="let estudante of estudantes" routerLink="/detail/{{estudante.ra}}">
                 <span class="label"><b>RA:</b> {{estudante.ra}} <b>NOME:</b> {{estudante.name}} <b>TELEFONE:</b> {{estudante.telephone}} <b>TURMA:</b> {{estudante.class}} <b>NOME DA MÃE:</b> {{estudante.motherName}}</span>
-            </li>
+                <button class="btn btn-danger btn-delete" title="delete estudante" (click)="delete(estudante)">X</button> </li>
         </ul>
     </div>
+</div>
+
+<div class="card card-default">
+    <label for="new-estudante">RA:</label>
+    <input id="new-estudante" #estudanteRa />
+    <label for="new-estudante">Nome Estudante:</label>
+    <input id="new-estudante" #estudanteNome />
+    <label for="new-estudante">Telefone:</label>
+    <input id="new-estudante" #estudanteTelephone />
+    <label for="new-estudante">Turma:</label>
+    <input id="new-estudante" #estudanteClass />
+    <label for="new-estudante">Nome da Mãe:</label>
+    <input id="new-estudante" #estudanteMotherName />
+    <br>
+    <footer>
+        <button class="btn btn-success button" (click)="add(estudanteRa.value, estudanteNome.value, estudanteMotherName.value, estudanteTelephone.value); estudanteRa.value=''; estudanteNome.value=''; estudanteMotherName.value=''; estudanteTelephone.value='' "> Adicionar Novo Estudante
+    </button>
+    </footer>
+    <br><br>
 </div>

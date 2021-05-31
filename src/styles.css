@@ -34,7 +34,7 @@ a:hover {
 }
 
 .estudantes li {
-    cursor: pointer;
+    width: 1300px;
     position: relative;
     left: 0;
     background-color: #EEE;
@@ -67,4 +67,13 @@ a:hover {
 
 input {
     padding: .5rem;
+}
+
+.btn-delete {
+    width: 20px;
+    height: 20px;
+    position: absolute;
+    right: 50px;
+    font-size: larger;
+    align-items: center;
 }

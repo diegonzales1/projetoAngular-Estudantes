@@ -33,4 +33,12 @@ export class EstudanteDetailComponent implements OnInit {
   goBack(): void{
     this.location.back();
   }
+
+  save(): void {
+    if(this.estudante){
+      this.estudante.ra = Math.floor((Math.random() * 100) + 1);
+      this.estudanteService.updateEstudante(this.estudante)
+        .subscribe(() => this.goBack());
+    }
+  }
 }

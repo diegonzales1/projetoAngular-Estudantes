@@ -22,4 +22,24 @@ export class EstudanteComponent implements OnInit {
       .subscribe(estudantes => this.estudantes = estudantes);
   }
 
+  add(ra: number, name: string, telephone: number, motherName: string): void{
+    name = name.trim();
+    motherName = motherName.trim();
+
+    if(!name)
+     return;
+
+    if(!motherName)
+    return;
+     
+    this.estudanteService.addEstudante({ra, name, telephone, motherName } as Estudante)
+      .subscribe(estudante => {
+        this.estudantes.push(estudante);
+      })
+ }
+
+ delete(estudante: Estudante): void {
+   this.estudantes = this.estudantes.filter(est => est !== estudante);
+   this.estudanteService.deleteEstudante(estudante.ra).subscribe();
+ }
 }

@@ -1,0 +1,91 @@
+{
+  "estudantes": [
+    {
+      "id": 0,
+      "ra": 1,
+      "name": "Fulano Cici ",
+      "telephone ": 2024244,
+      "class": "3A",
+      "motherName": "Ciclana Cici "
+    },
+    {
+      "id": 1,
+      "ra": 2,
+      "name": "Ciclana F.",
+      "telephone": 203532453,
+      "class": "1 A",
+      "motherName": "Fulana F."
+    },
+    {
+      "id": 2,
+      "ra": 2,
+      "name": "Ciclana Fila",
+      "telephone": 203532453,
+      "class": "1 A",
+      "motherName": "Fulana F."
+    },
+    {
+      "id": 3,
+      "ra": 4,
+      "name": "Maria Fulana",
+      "telephone": 453453820,
+      "class": " 1 C",
+      "motherName": "Fulana Maria"
+    },
+    {
+      "id": 4,
+      "ra": 5,
+      "name": "Fernada Ciclana",
+      "telephone": 453455220,
+      "class": "3 B",
+      "motherName": "Ciclana Fernada"
+    },
+    {
+      "id": 6,
+      "ra": 6,
+      "name": "Maria Fi",
+      "telephone": 159873520,
+      "class": "'3C",
+      "motherName": "Fulanes Ciclana "
+    },
+    {
+      "id": 7,
+      "ra": 8,
+      "name": "Maria Fula",
+      "telephone": 159875320,
+      "class": "2B",
+      "motherName": "Funalinha Fula "
+    },
+    {
+      "id": 8,
+      "ra": 9,
+      "name": "Fifi Ciclana",
+      "telephone": 322574520,
+      "class": "2C",
+      "motherName": " Maria Ciclana "
+    },
+    {
+      "id": 9,
+      "ra": 10,
+      "name": "Edu Fulano",
+      "telephone": 69787420,
+      "class": "4A",
+      "motherName": "Eduarda Fulana "
+    },
+    {
+      "name": "hfgh",
+      "id": 10
+    },
+    {
+      "name": "Diego Gonzales de Andrade",
+      "id": 11
+    },
+    {
+      "ra": "5",
+      "name": "gfddfg",
+      "telephone": "asds",
+      "motherName": "f65",
+      "id": 12
+    }
+  ]
+}
