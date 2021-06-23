@@ -12,7 +12,7 @@ import { catchError, map, tap } from 'rxjs/operators';
 })
 export class EstudanteService {
 
-  private estudanteUrl = 'http://localhost:3000/estudantes';
+  private estudanteUrl = 'http://localhost:8080/estudantes';
 
   private httpOptions = {
     headers: new HttpHeaders({ 'Content-Type': 'application/json'})
